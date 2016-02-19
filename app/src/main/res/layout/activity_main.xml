@@ -1,0 +1,63 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:text="@string/message"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/main_activity_message_text_color"
+        android:gravity="center_horizontal"
+        />
+
+
+    <MultiAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/city_box_hint"
+        android:id="@+id/city_box"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_btn_text"
+        android:textColor="@color/card_view_text_color"
+        android:background="@color/main_activity_btn_bg_color"
+        android:id="@+id/search"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="142dp"
+        android:layout_below="@+id/city_box"
+        android:layout_alignLeft="@+id/city_box"
+        android:layout_alignStart="@+id/city_box" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_room_white_24dp" />
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
